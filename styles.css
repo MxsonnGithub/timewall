@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  background: #ffa500;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wall {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.message {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  font-style: italic;
+  color: #eee;
+  max-width: 200px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  box-shadow: 0 0 10px #ffffff33;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
